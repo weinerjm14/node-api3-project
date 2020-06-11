@@ -75,7 +75,7 @@ router.delete('/:id', (req, res) => {
     });
 });
 
-router.put('/:id', validateUserId, validateUser, (req, res) => {
+router.put('/:id', validateUser, (req, res) => {
   // do your magic!
   const userId = req.params.id;
 
